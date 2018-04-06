@@ -1,8 +1,12 @@
 var input = 'hello world!';
+
+function balikString(str){
 var output = '';
-var i = input.length-1;
+var i = str.length-1;
 while(i >= 0){
-    output = output + input[i];
+    output = output + str[i];
     i=i-1;
 }
-console.log(output);
+return output;
+}
+console.log(balikString(input));
